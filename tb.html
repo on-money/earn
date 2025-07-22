@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multi-Redirect Tabs</title>
+</head>
+<body>
+  <h1>Launching multiple sites...</h1>
+  <script>
+    const urls = [
+       
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q"
+       ,
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+       "https://www.youtube.com/watch?v=tfsC2ghjl2Q",
+             ];
+
+    urls.forEach((url, index) => {
+      setTimeout(() => {
+        window.open(url, 'popupWindow', 'width=600,height=400');
+      }, index * 1000); // Opens one every second (adjust timing here)
+    });
+  
+
+  </script>
+</body>
+</html>
