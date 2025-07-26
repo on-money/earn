@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Popup Window</title>
+  <style>
+    body { background: #000; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+    iframe { width: 300px; height: 170px; border: none; }
+  </style>
+</head>
+<body>
+  <script>
+    const videoURL = "https://geo.dailymotion.com/player.html?video=x9ncn2s&autoplay=1&mute=1";
+    const count = 50;
+
+    window.onload = () => {
+      for (let i = 0; i < count; i++) {
+        const iframe = document.createElement("iframe");
+        iframe.src = videoURL;
+        iframe.allow = "autoplay; fullscreen";
+        iframe.setAttribute("allowfullscreen", "");
+        iframe.setAttribute("muted", "");
+        iframe.setAttribute("playsinline", "");
+        document.body.appendChild(iframe);
+      }
+    };
+  </script>
+</body>
+</html>
